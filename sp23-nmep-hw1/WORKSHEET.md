@@ -106,7 +106,7 @@ self. get transforms is used to convert the data to tensor and normalize and res
 
 ### 1.1.5 What does `transforms.Normalize` do? What do the parameters mean? (hint: take a look here: https://pytorch.org/vision/main/generated/torchvision.transforms.Normalize.html)
 
-`YOUR ANSWER HERE`
+The first parameter is a tuple of means and the second is a tuple of standard deviations that each row of the data will be normalized to.
 
 ## 1.2 MediumImagenetHDF5Dataset
 
@@ -139,15 +139,15 @@ The following questions relate to `models/build.py` and `models/models.py`.
 
 ## What models are implemented for you?
 
-`YOUR ANSWER HERE`
+LeNet and ResNet
 
 ## What do PyTorch models inherit from? What functions do we need to implement for a PyTorch Model? (hint there are 2)
 
-`YOUR ANSWER HERE`
+PyTorch model inherit from nn.Module. We need to implement forward and init.
 
 ## How many layers does our implementation of LeNet have? How many parameters does it have? (hint: to count the number of parameters, you might want to run the code)
 
-`YOUR ANSWER HERE`
+There are two convolutional layers and three linear layers.
 
 
 
