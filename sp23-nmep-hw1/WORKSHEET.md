@@ -76,33 +76,33 @@ The following questions relate to `data/build.py` and `data/datasets.py`.
 
 ### 1.0.0 What does `build_loader` do?
 
-`YOUR ANSWER HERE`
+It creates datasets and dataloaders from the data with the desired batch size, etc. and splits the data into train test val.
 
 ### 1.0.1 What functions do you need to implement for a PyTorch Datset? (hint there are 3)
 
-`YOUR ANSWER HERE`
+init, getitem, and len
 
 ## 1.1 CIFAR10Dataset
 
 ### 1.1.0 Go through the constructor. What field actually contains the data? Do we need to download it ahead of time?
 
-`YOUR ANSWER HERE`
+self.dataset
 
 ### 1.1.1 What is `self.train`? What is `self.transform`?
 
-`YOUR ANSWER HERE`
+self.train says whether or not this is part of the training set and whether we want to transform the data. self.transform is a function that converts the data to tensor and does transformations which differ based on whether it is training data or not.
 
 ### 1.1.2 What does `__getitem__` do? What is `index`?
 
-`YOUR ANSWER HERE`
+getitem is a method for getting an item from a specified index in the dataset, useful when iterating over the data when training.
 
 ### 1.1.3 What does `__len__` do?
 
-`YOUR ANSWER HERE`
+returns the length of the dataset.
 
 ### 1.1.4 What does `self._get_transforms` do? Why is there an if statement?
 
-`YOUR ANSWER HERE`
+self. get transforms is used to convert the data to tensor and normalize and resize it. There is an if statement so that training data can be augmented.
 
 ### 1.1.5 What does `transforms.Normalize` do? What do the parameters mean? (hint: take a look here: https://pytorch.org/vision/main/generated/torchvision.transforms.Normalize.html)
 
