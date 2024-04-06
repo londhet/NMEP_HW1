@@ -28,7 +28,7 @@ Feel free to ask your NMEP friends if you don't know!
 
 ## -1.0 What is the difference between `torch.nn.Module` and `torch.nn.functional`?
 
-`YOUR ANSWER HERE`
+Module has modules for building a model and functional has functions that can be used on Tensors.
 
 ## -1.1 What is the difference between a Dataset and a DataLoader?
 
