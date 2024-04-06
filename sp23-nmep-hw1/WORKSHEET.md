@@ -32,11 +32,11 @@ Module has modules for building a model and functional has functions that can be
 
 ## -1.1 What is the difference between a Dataset and a DataLoader?
 
-`YOUR ANSWER HERE`
+The Dataset contains the data and the DataLoader wraps the Dataset and is used to iterate of the Dataset in batches while training.
 
 ## -1.2 What does `@torch.no_grad()` above a function header do?
 
-`YOUR ANSWER HERE`
+It prevents a model from backpropagating.
 
 
 
