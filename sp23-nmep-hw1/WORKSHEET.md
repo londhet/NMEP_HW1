@@ -46,25 +46,26 @@ Read through `README.md` and follow the steps to understand how the repo is stru
 
 ## 0.0 What are the `build.py` files? Why do we have them?**
 
-`YOUR ANSWER HERE`
+The build.py files build their respective category; they create instances of the model/create the dataloaders
 
 ## 0.1 Where would you define a new model?
 
-`YOUR ANSWER HERE`
+Under the models folder in a new file.
 
 ## 0.2 How would you add support for a new dataset? What files would you need to change?
 
-`YOUR ANSWER HERE`
+You would need to chage build.py and datasets.py.
 
 ## 0.3 Where is the actual training code?
 
-`YOUR ANSWER HERE`
+main.py
 
 ## 0.4 Create a diagram explaining the structure of `main.py` and the entire code repo.
 
 Be sure to include the 4 main functions in it (`main`, `train_one_epoch`, `validate`, `evaluate`) and how they interact with each other. Also explain where the other files are used. No need to dive too deep into any part of the code for now, the following parts will do deeper dives into each part of the code. For now, read the code just enough to understand how the pieces come together, not necessarily the specifics. You can use any tool to create the diagram (e.g. just explain it in nice markdown, draw it on paper and take a picture, use draw.io, excalidraw, etc.)
 
-`YOUR ANSWER HERE`
+<img width="609" alt="image" src="https://github.com/londhet/NMEP_HW1/assets/123130718/31152ead-e844-4b27-b5d1-65a3415b1594">
+
 
 
 
