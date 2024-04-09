@@ -87,7 +87,7 @@ init, getitem, and len
 
 ### 1.1.0 Go through the constructor. What field actually contains the data? Do we need to download it ahead of time?
 
-self.dataset
+self.dataset, no it comes from pytorch
 
 ### 1.1.1 What is `self.train`? What is `self.transform`?
 
@@ -113,17 +113,17 @@ The first parameter is a tuple of means and the second is a tuple of standard de
 
 ### 1.2.0 Go through the constructor. What field actually contains the data? Where is the data actually stored on honeydew? What other files are stored in that folder on honeydew? How large are they?
 
-`YOUR ANSWER HERE`
+self.file, the data is stored in the data folder on honeydew. Other data is stored in that folder, some of them are pretty large like 100s of GB.
 
 > *Some background*: HDF5 is a file format that stores data in a hierarchical structure. It is similar to a python dictionary. The files are binary and are generally really efficient to use. Additionally, `h5py.File()` does not actually read the entire file contents into memory. Instead, it only reads the data when you access it (as in `__getitem__`). You can learn more about [hdf5 here](https://portal.hdfgroup.org/display/HDF5/HDF5) and [h5py here](https://www.h5py.org/).
 
 ### 1.2.1 How is `_get_transforms` different from the one in CIFAR10Dataset?
 
-get_transforms 
+get_transforms here has different transformation parameters and an additional self.augment field that decides whether or not to perform additional transformations on the training data.
 
 ### 1.2.2 How is `__getitem__` different from the one in CIFAR10Dataset? How many data splits do we have now? Is it different from CIFAR10? Do we have labels/annotations for the test set?
 
-`YOUR ANSWER HERE`
+getitem here returns a label of -1 if self.split == "test".
 
 ### 1.2.3 Visualizing the dataset
 
